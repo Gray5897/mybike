@@ -379,40 +379,4 @@ $conexion->abrir();
 		}
 		echo $var1;
 	}
-
-
-
-
-	/***************************************************************
-	********** REGISTRAR historia  *********************************
-	****************************************************************/
-
-	if(isset($_POST['reg_histo'])){ 
-		$antmed=$_POST['antmed'];
-        $antsic=$_POST['antsic'];
-        $antodo=$_POST['antodo'];
-        $asfige=$_POST['asfige'];
-        $diaext=$_POST['diaext'];
-        $diaint=$_POST['diaint'];
-        $diaocl=$_POST['diaocl'];
-        $platra=$_POST['platra'];
-        $anoden=$_POST['anoden'];
-        $diarad=$_POST['diarad'];
-		
-		$sql = 'INSERT INTO antecedentes_medicos(cod_invima,descripcion) VALUES (:id,:descr)';
-		$stmt = $conexion->consulta($sql);
-		$stmt->execute(array('id' => $id,'descr'=>$des));
-		$cant = $stmt->rowCount();
-		if($cant == 1){
-			echo "historia registrada con éxito";
-			
-		}
-		else{
-			echo "Error en el registro";
-		}
-		$conexion->cerrar();
-	}
-
-
-
 	?>
