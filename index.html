@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyBike</title><link rel="icon" type="image/png" href="../IMAGENES/Captura.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style>
+	
+		.imglogo {
+  aling:center;
+  display: block;
+  margin: 0 auto;
+  
+}
+.padre {
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hijo {
+  border-radius: 25px 25px 25px 25px; 
+  background-color:rgb(255,0,0);
+   opacity:0.8; /* Opacidad 60% */
+  
+}
+ .h4 {
+ color: #17a2b8; }
+
+
+
+	</style>
+</head>
+<body class="img-fluid" background="Imagenes/FondoBody2.jpg" alt="Responsive image">
+<!--	<div align="center" style="background-color: red; height: 100px; "><img src="../IMAGENES/Logo1.png" alt=""></div>-->
+<form>
+<div style="height: 450px;">
+	<img src="Imagenes/Logo1.png" class="img-fluid; imglogo" alt="Responsive image">
+	</div>
+  <div class="padre">
+  <div class="form-group hijo" style="background-color: #EAEDED;" >
+    <label for="exampleFormControlFile1"></label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <h4 class="h4">Foto de tu bicicleta</h4>
+      <div class="form-group">
+    <label for="formGroupExampleInput">Marca</label>
+    <input type="text" class="form-control" id="formGroupExampleInput">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Modelo</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2">
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput3">Color</label>
+    <input type="text" class="form-control" id="formGroupExampleInput3">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput4">Serie</label>
+    <input type="text" class="form-control" id="formGroupExampleInput4">
+  </div>
+  <button type="button" class="btn btn-info btn-lg btn-block">Registrar</button>
+  </div>
+
+</div>
+
+</form>
+</body>
+</html>
