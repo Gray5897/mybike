@@ -1,4 +1,0 @@
-language: php
-script: mvn/home.php test
-"-DgroupId"= com.company.module //Wrong , Watch the space after the equal to 
-"-DgroupId"=com.company.module //Right 
